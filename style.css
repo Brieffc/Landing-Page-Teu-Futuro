@@ -152,6 +152,7 @@ body {
 .container {
   padding-inline: 15px;
 }
+
 .background {
   background-image: url("./assets/img/3.jpg");
   width: 100%;
@@ -549,22 +550,11 @@ body {
   margin-block-end: 30px;
 }
 
-.blog-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
-  margin: 5px;
-}
-
-.blog-list > li {
-  max-width: 100%;
-}
-
 .blog-card {
   padding: 15px;
   border-radius: var(--radius-10);
   box-shadow: var(--shadow-2);
+  margin: 35px;
 }
 
 .blog-card .card-banner {
@@ -584,6 +574,7 @@ body {
 .blog-card :is(.card-meta-list, .card-meta-item) {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .blog-card .card-meta-list {
@@ -730,12 +721,25 @@ body {
 /* MEDIA QUERIES
   responsivo 575px
 */
-
+@media (min-width: 480px) {
+  .blog-list > li {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+    max-width: 100%;
+  }
+}
 @media (min-width: 575px) {
   .container {
     max-width: 540px;
     width: 100%;
     margin-inline: auto;
+  }
+  .blog-list > li {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    max-width: 100%;
   }
 }
 
@@ -793,7 +797,10 @@ body {
   }
 
   .blog-list > li {
-    max-width: calc(50% - 10px);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+    max-width: 100%;
   }
 }
 
@@ -874,7 +881,10 @@ body {
   }
 
   .blog-list > li {
-    max-width: calc(33.33% - 13.33px);
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 20px;
   }
 
   .footer-top .container {
@@ -936,35 +946,35 @@ body {
     padding: 30px;
   }
 
-  .blog-list {
-    gap: 25px;
-  }
-
   .blog-list > li {
-    max-width: calc(33.33% - 16.66px);
+    position: relative;
+    transition: var(--transition-2);
+    gap: 5px;
+    padding: 1px;
+    margin: 1px;
   }
+}
 
-  .footer-list-title {
-    --fs-2: 2.2rem;
-  }
+.footer-list-title {
+  --fs-2: 2.2rem;
+}
 
-  .social-link {
-    font-size: 18px;
-    padding: 14px;
-  }
+.social-link {
+  font-size: 18px;
+  padding: 14px;
+}
 
-  .footer-link,
-  .copyright {
-    --fs-4: 1.5rem;
-  }
+.footer-link,
+.copyright {
+  --fs-4: 1.5rem;
+}
 
-  .back-top-btn {
-    font-size: 24px;
-    padding: 13px;
-    bottom: 40px;
-  }
+.back-top-btn {
+  font-size: 24px;
+  padding: 13px;
+  bottom: 40px;
+}
 
-  .back-top-btn.active {
-    transform: translateX(-80px);
-  }
+.back-top-btn.active {
+  transform: translateX(-80px);
 }
