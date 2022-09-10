@@ -310,6 +310,12 @@ body {
   font-size: 35px;
   font-weight: var(--fw-900);
 }
+.logo-equipe {
+  margin: 70px auto 0;
+  max-width: 100%;
+  height: auto;
+  padding-bottom: 100px;
+}
 
 .nav-toggle-btn {
   background-color: var(--pumpkin);
@@ -431,17 +437,13 @@ body {
 }
 
 .features-card .card-icon {
-
   max-width: max-content;
   margin-inline: auto;
 }
 
-
 .features-card .card-title {
   margin-block: 18px 15px;
 }
-
-
 
 /*
   ABOUT
@@ -552,6 +554,7 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
+  margin: 5px;
 }
 
 .blog-list > li {
