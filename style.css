@@ -433,7 +433,7 @@ body {
   border-radius: var(--radius-10);
   text-align: center;
   box-sizing: border-box;
-  height: 280px;
+  height: 350px;
 }
 
 .features-card .card-icon {
