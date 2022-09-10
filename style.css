@@ -315,6 +315,7 @@ body {
   margin: 70px auto 0;
   max-width: 100%;
   height: auto;
+  padding-bottom: 100px;
 }
 
 .nav-toggle-btn {
@@ -530,6 +531,7 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
+  margin: 5px;
 }
 
 .blog-list > li {
