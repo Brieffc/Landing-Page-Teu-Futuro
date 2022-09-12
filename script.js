@@ -76,7 +76,7 @@ window.addEventListener("load", start)
 
 
 //TIMER
-let launchDate = new Date("Sept 30, 2022 23:59:59").getTime();
+let launchDate = new Date("Sept 13, 2022 17:30:00").getTime();
 
 let timer = setInterval(tick, 1000);
 
