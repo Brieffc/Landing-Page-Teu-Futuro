@@ -40,7 +40,7 @@ Tecnologias usadas.
 
 - Visualização
 - Compra
-
+https://bugcode.netlify.app/
 <br />
 <br />
 
